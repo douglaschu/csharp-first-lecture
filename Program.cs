@@ -59,6 +59,102 @@ Console.WriteLine(catName);
 catName = "Felony";
 Console.WriteLine(catName);
 
+//use null to set a default value
+string y = null;
+if (y == null)
+{
+    y = "keysmash";
+}
 
+//non-nullable variables:
+//int z = null;
+//the more complex an object is, the more likely it can be null.
 
+/* Today's exercises 
+ * EXERCISE 1
+
+Description
+Prompt the user to enter a string. After the user enters a string, output the same string back to the console.
+
+Example
+>>Enter some text: <<Hello, World! ECHOOOOOO!
+>>Hello, World! ECHOOOOOO!
+
+*/
+
+Console.WriteLine("Please enter a string.");
+string stringEntry = Console.ReadLine();
+Console.WriteLine(stringEntry);
+
+/*
+EXERCISE 2
+
+Description
+Prompt the user to enter a number. After the user enters a number, add 1 to the number and output it back to the console.
+
+Example
+>>Enter a number: <<52
+>>53
+*/
+
+Console.WriteLine("Please enter a number.");
+double number = int.Parse(Console.ReadLine());
+number++;
+Console.WriteLine(number);
+
+/*
+EXERCISE 3
+
+Description
+Prompt the user to enter a number. After the user enters a number, add .5 to the number and output it back to the console.
+
+Example
+>>Enter a number: <<17.3
+>>17.8
+*/
+
+Console.WriteLine("Please enter a number.");
+double secondNumber = double.Parse(Console.ReadLine());
+secondNumber += 0.5;
+Console.WriteLine(secondNumber);
+
+/*
+EXERCISE 4
+
+Description
+Prompt the user to enter two numbers. After the user enters the numbers, add them together and output the sum back to the console.
+
+Example
+>>Enter a number: <<12.2
+>>Enter another number: <<17.3
+>>The sum is 29.5
+*/
+
+Console.WriteLine("Please enter a number.");
+int numberA = int.Parse(Console.ReadLine());
+Console.WriteLine("Please enter another number.");
+int numberB = int.Parse(Console.ReadLine());
+int sum = numberA + numberB;
+Console.WriteLine($"The sum is {sum}.");
+
+/*
+EXERCISE 5
+
+Description
+Prompt the user to enter two numbers. After the user enters the numbers, multiply them and output the product back to the console.
+
+Example
+>>Enter a number: <<10.2
+>>Enter another number: <<13.4
+>>The product is 136.68
+ */
+
+Console.WriteLine("Please enter a number.");
+int numberC = int.Parse(Console.ReadLine());
+Console.WriteLine("Please enter another number.");
+int numberD = int.Parse(Console.ReadLine());
+int product = numberC * numberD;
+Console.WriteLine($"The product is {product}.");
+
+//inserted Console.ReadLine() as VS for Mac command to stop program
 Console.ReadLine();
